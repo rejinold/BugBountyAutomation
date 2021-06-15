@@ -17,6 +17,9 @@ waybackurls - https://github.com/tomnomnom/waybackurls
 
 
 USAGE:
+$ sudo ./install.sh
+
+$ chmod +x install.sh
 
 $ chmod +x bbhrecon
 
