@@ -1,0 +1,15 @@
+#!/bin/bash
+mkdir $1;
+cd $1;
+echo "[*] SUBDOMAIN RECON ";
+subfinder --silent -d $1 -o subdomains;
+cat subdomains | wc -l;
+echo;
+echo "[*] HTTP VALIDATION ";
+cat subdomains | httprobe -prefer-https | anew valid_domains;
+cat valid_domains |  wc -l;
+echo;
+echo "[*] WEB FINGERPRINTING";
+mkdir fingerprint;
+cd fingerprint;
+cat ../valid_domains | aquatone -silent | grep -v aqua;
