@@ -17,6 +17,8 @@ waybackurls - https://github.com/tomnomnom/waybackurls
 
 
 USAGE:
+
 $ chmod +x bbhrecon
+
 $ bbhrecon example.com
 
