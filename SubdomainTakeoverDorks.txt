@@ -1,0 +1,1 @@
+site:*.*.no intext:"No Site For Domain"
